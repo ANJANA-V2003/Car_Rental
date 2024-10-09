@@ -24,7 +24,7 @@ class _Carrental_8State extends State<Carrental_8> {
         ),
       ),
       body: ListView.builder(
-        itemCount: 15,
+        itemCount: 30,
         itemBuilder: (context, index) {
           if (index == 0) {
             return Column(

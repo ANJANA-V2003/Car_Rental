@@ -81,7 +81,16 @@ class _Carrental_5State extends State<Carrental_5> {
               padding: EdgeInsets.only(top: 70.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Pinput()],
+                children: [Pinput(defaultPinTheme: PinTheme(
+                    width: 60.w,
+                    height: 60.h,
+                    textStyle: TextStyle(
+                        fontSize: 20.sp, fontWeight: FontWeight.bold),
+                    decoration: BoxDecoration(
+                        color: Colors.indigo.shade50,
+                        border: Border.all(
+                            width: 2.w, color: Colors.indigo.shade900),
+                        borderRadius: BorderRadius.circular(15.r))),)],
               ),
             ),
             Padding(

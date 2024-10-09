@@ -91,7 +91,7 @@ class _Carrental_12State extends State<Carrental_12> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(left: 170.w),
+                            padding: EdgeInsets.only(left: 130.w),
                             child: Text(
                               "\u20B960,000",
                               style: TextStyle(
@@ -154,7 +154,7 @@ class _Carrental_12State extends State<Carrental_12> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(left: 260.w),
+                            padding: EdgeInsets.only(left: 220.w),
                             child: Radio(
                                 activeColor: Colors.black,
                                 value: 'PayPal',
@@ -210,7 +210,7 @@ class _Carrental_12State extends State<Carrental_12> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(left: 218.w),
+                            padding: EdgeInsets.only(left: 180.w),
                             child: Radio(
                                 activeColor: Colors.black,
                                 value: 'Google Pay',
@@ -266,7 +266,7 @@ class _Carrental_12State extends State<Carrental_12> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(left: 110.w),
+                            padding: EdgeInsets.only(left: 65.w),
                             child: Radio(
                                 activeColor: Colors.black,
                                 value: '**** **** **** **** 8775',

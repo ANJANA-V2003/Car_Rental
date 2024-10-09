@@ -123,7 +123,7 @@ class _Carrental_13State extends State<Carrental_13> {
                               style: TextStyle(
                                   color: Colors.indigo.shade900,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: 22.sp),
+                                  fontSize: 20.sp),
                             ),
                           ),
                           Padding(
@@ -165,7 +165,7 @@ class _Carrental_13State extends State<Carrental_13> {
                               style: TextStyle(
                                   color: Colors.indigo.shade900,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: 22.sp),
+                                  fontSize: 20.sp),
                             ),
                           ),
                           Padding(
@@ -207,7 +207,7 @@ class _Carrental_13State extends State<Carrental_13> {
                               style: TextStyle(
                                   color: Colors.indigo.shade900,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: 22.sp),
+                                  fontSize: 20.sp),
                             ),
                           ),
                           Padding(

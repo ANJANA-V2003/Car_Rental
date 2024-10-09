@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pinput.dart';
@@ -146,9 +147,9 @@ class _Carrental_14State extends State<Carrental_14> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        backgroundColor: Colors.grey.shade100,
+        backgroundColor: Colors.grey.shade200,
         leading: IconButton(
             onPressed: () {
               Navigator.of(context).pop();
@@ -183,6 +184,16 @@ class _Carrental_14State extends State<Carrental_14> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Pinput(
+                    defaultPinTheme: PinTheme(
+                        width: 60.w,
+                        height: 60.h,
+                        textStyle: TextStyle(
+                            fontSize: 20.sp, fontWeight: FontWeight.bold),
+                        decoration: BoxDecoration(
+                            color: Colors.indigo.shade50,
+                            border: Border.all(
+                                width: 2.w, color: Colors.indigo.shade900),
+                            borderRadius: BorderRadius.circular(15.r))),
                     pinAnimationType: PinAnimationType.fade,
                   )
                 ],
