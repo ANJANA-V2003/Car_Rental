@@ -147,7 +147,7 @@ class _Carrental_11State extends State<Carrental_11> {
                                   padding: EdgeInsets.only(left: 15.w),
                                   child: Text(
                                     _startDate == null
-                                        ? 'No date selected!'
+                                        ? 'Null'
                                         : DateFormat('dd/MM/yyyy').format(
                                             _startDate!), // Format the date
                                   ),
@@ -188,7 +188,7 @@ class _Carrental_11State extends State<Carrental_11> {
                                     padding: EdgeInsets.only(left: 15.w),
                                     child: Text(
                                       _endDate == null
-                                          ? 'No date selected!'
+                                          ? 'Null'
                                           : DateFormat('dd/MM/yyyy').format(
                                               _endDate!), // Format the date
                                     ),

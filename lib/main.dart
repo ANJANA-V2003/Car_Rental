@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(450, 975),
       splitScreenMode: true,minTextAdapt: true,
       builder: (context, child) => //size(dp unit)
-          MaterialApp(
+          MaterialApp(debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           // This is the theme of your application.
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Carrental_14(),
+        home: Carrental_1(),
       ),
     );
   }

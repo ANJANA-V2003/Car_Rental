@@ -1,3 +1,4 @@
+import 'package:car_rental/Car_Rental_UI/CarRental6_Navi_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -78,7 +79,11 @@ class _Carrental_14State extends State<Carrental_14> {
                 children: [
                   InkWell(
                       onTap: () {
-                        Navigator.of(context).pop();
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) {
+                            return Carrental6_NaviBar();
+                          },
+                        ));
                       },
                       child: Container(
                         height: 50.h,
@@ -101,7 +106,7 @@ class _Carrental_14State extends State<Carrental_14> {
             ),
             Padding(
               padding: EdgeInsets.only(top: 20.h),
-              child: Row(
+              child: Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 50.h,

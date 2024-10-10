@@ -423,7 +423,7 @@ class _Carrental_13State extends State<Carrental_13> {
                     ));
                   },
                   child: Padding(
-                    padding: EdgeInsets.only(top: 80.h),
+                    padding: EdgeInsets.only(top: 60.h),
                     child: Container(
                       height: 70.h,
                       width: 410.w,
