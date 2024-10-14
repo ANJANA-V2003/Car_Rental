@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'CarRental_10.dart';
+
 class Carrental_6 extends StatefulWidget {
   const Carrental_6({super.key});
 
@@ -62,6 +64,7 @@ class _Carrental_6State extends State<Carrental_6> {
                 padding: EdgeInsets.only(top: 20.h, left: 10.w),
                 child: CircleAvatar(
                   radius: 25.r,
+                  backgroundImage: AssetImage("assets/Car8.jpeg"),
                 ),
               )
             ],
@@ -115,9 +118,8 @@ class _Carrental_6State extends State<Carrental_6> {
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(20),
                       image: DecorationImage(
-                          image: AssetImage("assets/Car6.2.png"),fit: BoxFit.cover
-                      )
-                  ),
+                          image: AssetImage("assets/Car6.2.png"),
+                          fit: BoxFit.cover)),
                 )
               ],
             ),
@@ -231,9 +233,8 @@ class _Carrental_6State extends State<Carrental_6> {
                                     width: 80.w,
                                     decoration: BoxDecoration(
                                         image: DecorationImage(
-                                            image:
-                                                AssetImage("assets/Car2.5.png"),
-                                            )),
+                                      image: AssetImage("assets/Car2.5.png"),
+                                    )),
                                   ),
                                 ),
                               )
@@ -371,112 +372,121 @@ class _Carrental_6State extends State<Carrental_6> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 20.h),
-                child: Container(
-                  height: 320.h,
-                  width: 410.w,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20.r)),
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left: 20.w),
-                        child: Container(
-                          height: 200.h,
-                          width: 380.w,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                            image: AssetImage("assets/Car6.4.png"),
-                          )),
-                        ),
+                  padding: EdgeInsets.only(top: 20.h),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) {
+                          return Carrental_10();
+                        },
+                      ));
+                    },
+                    child: Container(
+                      height: 320.h,
+                      width: 410.w,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.r)),
+                      child: Stack(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.w),
+                            child: Container(
+                              height: 200.h,
+                              width: 380.w,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: AssetImage("assets/Car6.4.png"),
+                              )),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 190.h),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Text(
+                                    "Mercedes S-class",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 25.sp),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 110.w),
+                                  child: Icon(
+                                    CupertinoIcons.star_fill,
+                                    color: Colors.yellow.shade600,
+                                  ),
+                                ),
+                                Text(
+                                  "4.8",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 20.sp),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 230.h),
+                            child: Divider(
+                              color: Colors.grey.shade300,
+                              indent: 20.w,
+                              endIndent: 20.w,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 260.h),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Text(
+                                    "Automatic",
+                                    style: TextStyle(
+                                        color: Colors.grey.shade400,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18.sp),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Text(
+                                    "5-Seater",
+                                    style: TextStyle(
+                                        color: Colors.grey.shade400,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18.sp),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.w),
+                                  child: Text(
+                                    "Disel",
+                                    style: TextStyle(
+                                        color: Colors.grey.shade400,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 18.sp),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30.w),
+                                  child: Text(
+                                    "\u20B9 60,000",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 25.sp),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 190.h),
-                        child: Row(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(left: 20.w),
-                              child: Text(
-                                "Mercedes S-class",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 25.sp),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 110.w),
-                              child: Icon(
-                                CupertinoIcons.star_fill,
-                                color: Colors.yellow.shade600,
-                              ),
-                            ),
-                            Text(
-                              "4.8",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w500, fontSize: 20.sp),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 230.h),
-                        child: Divider(
-                          color: Colors.grey.shade300,
-                          indent: 20.w,
-                          endIndent: 20.w,
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 260.h),
-                        child: Row(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(left: 20.w),
-                              child: Text(
-                                "Automatic",
-                                style: TextStyle(
-                                    color: Colors.grey.shade400,
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 18.sp),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 20.w),
-                              child: Text(
-                                "5-Seater",
-                                style: TextStyle(
-                                    color: Colors.grey.shade400,
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 18.sp),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 20.w),
-                              child: Text(
-                                "Disel",
-                                style: TextStyle(
-                                    color: Colors.grey.shade400,
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 18.sp),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 30.w),
-                              child: Text(
-                                "\u20B9 60,000",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 25.sp),
-                              ),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              )
+                    ),
+                  ))
             ],
           )
         ],
